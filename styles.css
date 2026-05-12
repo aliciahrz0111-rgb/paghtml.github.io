@@ -1,97 +1,205 @@
-/*CONFIGURACION DEL ENCABEZADO*/
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
 
-/* Establece una imagen de fondo para el encabezado */
-#mi-encabezado {
-background-image: url('img/Cuidad.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' 
-con la ubicación de tu imagen */
-background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-background-position: center; /* Centra la imagen en el encabezado */
-height: 35rem; /* Altura del encabezado (ajusta según tus necesidades) */
-
-color: #ffffff; /* Color del texto en el encabezado para asegurar la legibilidad */
-text-orientation: upright;
-text-align: center; /* Alinea el contenido al centro del encabezado */
-padding: 20px; /* Espacio de relleno interno para el contenido */
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Estilos adicionales para el Título en el encabezado */
-#mi-encabezado h1 {
-font-size: 45px; /* Tamaño de fuente del título */
-font-family: Arial, Helvetica, sans-serif;
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef3f9;
+    color: #1b1b1b;
+    line-height: 1.8;
 }
 
-/* Estilos adicionales para el texto en el encabezado */
-#mi-encabezado p {
-font-size: 25px; /* Tamaño de fuente del texto del encabezado */
+/* =========================
+   ENCABEZADO
+========================= */
+
+#mi-encabezado{
+    background-image: linear-gradient(
+        rgba(5, 15, 40, 0.75),
+        rgba(5, 15, 40, 0.75)
+    ),
+    url('img/Cuidad.jpg');
+
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    padding: 20px;
 }
 
-/*CONFIGURACION DEL MENU*/
+/* TÍTULO PRINCIPAL */
 
-/* Establece el fondo transparente para el menú */
-nav {
-background-color: rgba(255, 255, 255, 0);
-padding: 20px;
-position: fixed; /* Posiciona el menú en la parte superior de la página */
-top: 0;
-left: 0;
-width: 100%;
-transition: background-color 0.5s; /* Transición suave para el cambio de color de
-fondo */
+#mi-encabezado h1{
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
 
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
 }
 
-/* Estilos para los elementos menu*/
-ul {
-list-style-type: none;
-text-align: right;
-margin-right: 3rem;
+/* SUBTÍTULO */
+
+#mi-encabezado p{
+    font-size: 1.5rem;
+    max-width: 700px;
+
+    color: #d7e7ff;
 }
 
-/*elementos de la lista del menu*/
-li {
-display: inline;
-margin-right: 30px; /* Espacio entre elementos del menú */
+/* =========================
+   MENÚ
+========================= */
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 18px 40px;
+
+    background: rgba(0, 0, 50, 0.35);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+
+    transition: 0.4s ease;
 }
 
-a {
-text-decoration: none;
-color: #fffdfd; /* Color del texto del menú */
-font-weight: bold;
+/* LISTA */
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
 }
 
-/* Cambia el color del enlace cuando se pasa el mouse por encima */
-a:hover {
-color: #ff9900; /* Cambia el color al pasar el mouse por encima */
+/* ENLACES */
+
+nav a{
+    text-decoration: none;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition: 0.3s ease;
 }
 
-/*CONFIGURACION DEL BODY*/
-body {
-/*configura los margenes de la página*/
-margin-top: 0px; /* Ajusta según la altura del menú */
-margin-left: 0px;
-margin-right: 0px;
-font-family: Arial, Helvetica, sans-serif;
+/* EFECTO HOVER */
+
+nav a:hover{
+    color: #4da3ff;
 }
 
-/*CONFIGURACION DEL CONTENIDO*/
-.contenido {
-/* configura el color, tamaño de fuente y alineación del texto en el cuerpo de la
-página */
-color: #000000;
-font-size: 20px;
-padding: 5%;
-text-align:justify;
+/* =========================
+   CONTENIDO
+========================= */
 
-font-family: Arial, Helvetica, sans-serif;
+.contenido{
+
+    width: 85%;
+    max-width: 1200px;
+
+    margin: 50px auto;
+
+    background: white;
+
+    padding: 50px;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
 }
 
-.footer {
-background-color: rgb(5,43,150); /* Cambia el color de fondo a azul */
-padding: 10rem;
-color: #fffdfd;
-color: #ffffff; /* Color del texto en el encabezado para asegurar la legibilidad */
-text-align: center; /* Alinea el contenido al centro del encabezado */
-/* Espacio de relleno interno para el contenido */
+/* TITULOS */
 
+.contenido h2{
+    text-align: center;
+    margin-bottom: 30px;
+
+    color: #0b1f3a;
+
+    font-size: 2.2rem;
 }
+
+/* PÁRRAFOS */
+
+.contenido p{
+    margin-bottom: 25px;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+/* LINEA */
+
+hr{
+    border: none;
+    height: 3px;
+
+    background: linear-gradient(to right, #0b1f3a, #4da3ff);
+
+    margin-bottom: 35px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    background-color: #071426;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+    margin-top: 50px;
+
+    font-size: 1rem;
+
+    letter-spacing: 1px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    #mi-encabezado h1{
+        font-size: 2.5rem;
+    }
+
+    #mi-encabezado p{
+        font-size: 1.1rem;
+    }
+
+    nav ul{
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .contenido{
+        width: 92%;
+        padding: 25px;
+    }
+} 

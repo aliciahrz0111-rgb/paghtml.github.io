@@ -1,139 +1,181 @@
-<!DOCTYPE html> <!-- Indica que es un documento HTML, de lo contrario si no lo
-ponemos, lo interpretaria como codigo antiguo antes de los 90's Quirks mode,
-aparecerian codigos antiguos -->
-<html lang="es">
+<!DOCTYPE html>
+<html lang="es"> 
 
-<!--invoca al archivo style.css que contiene todas las configuraciones de estilos de
-la página-->
-<link rel="stylesheet" href="styles.css">
+<head>
 
-<!-- Encabezado, el valor atributo id invoca a una funcion del archivo style.css
-para dar el formato del menu -->
-<header id="mi-encabezado">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CURSO HTML</title>
-<!--Creacion del menú utilizando Nav-->
-<nav>
-<ul>
-<li><a href="index.html">Inicio</a></li>
-<li><a href="about.html">Acerca de </a></li>
-<li><a href="contact.html">Contacto</a></li>
-</ul>
-</nav>
+    <!-- TÍTULO -->
+    <title>Módulo 2.2 | Contacto</title>
 
-<!--Texto del encabezado-->
-<h1>Curso de HTML</h1>
-<p>Acerca de</p>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
 
-</header>
+</head>
 
-<!--Cuerpo del HTML. Las configuraciones de estilos se encuentran en el archivo
-style.css-->
 <body>
 
-<main>
+    <!-- ENCABEZADO -->
+    <header id="mi-encabezado">
 
-<!--*CONFIGURACION DEL TEXTO EN EL CUERPO. El tamño y tipo de letra
-estan especificados en el archivo style.css*-->
-<section class="contenido">
-<h2> <span style="background-color:rgb(208, 209, 245);" ;>Acerca
-de...</span>
-<tr><td> <hr>
-</hr></h2>
-<p>
-Aquí te proporciono las etiquetas básicas que necesitas para crear un
-archivo HTML llamado
-"index.html" y una breve explicación de su importancia:</p>
-<p>
-1. < !DOCTYPE html>: Esta declaración define la versión de HTML que
-estás utilizando, en este
-caso, HTML5. Es importante incluir esta línea al principio del documento
-para que los navegadores
-sepan cómo interpretar el código HTML.</p>
-<p>
-2.< html>: La etiqueta < html> es el elemento raíz de tu documento HTML.
-Todo el contenido
-de tu página web debe estar contenido dentro de esta etiqueta.</p>
-<p>
-3. < head>: La sección < head> contiene información sobre el documento,
-como el título de la página,
+        <!-- MENÚ -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
 
-la codificación de caracteres y las referencias a archivos CSS y JavaScript.
-Es importante para la
-optimización de motores de búsqueda (SEO) y para configurar la
-apariencia y comportamiento de tu página.</p>
-<p>
-4. < meta charset="UTF-8">: Esta etiqueta se utiliza para especificar la
-codificación de caracteres
-del documento. El valor "UTF-8" es ampliamente utilizado y es compatible
-con la mayoría de los
-caracteres en diferentes idiomas.</p>
-<p>
+        <!-- TEXTO PRINCIPAL -->
+        <h1>Módulo 2.2</h1>
+        <p>Contacto y Soporte Académico</p>
 
-5. < meta name="viewport" content="width=device-width, initial-
-scale=1.0">: Esta etiqueta configura
+    </header>
 
-la escala inicial y el ancho de la pantalla para dispositivos móviles, lo que
-ayuda a que tu página
-web sea responsive y se adapte a diferentes tamaños de pantalla.</p>
-<p>
-6. < title>: La etiqueta < title> define el título de tu página web, que se
-mostrará en la pestaña
-del navegador. Este título es importante para la identificación y la
-organización de tus páginas en
-los resultados de búsqueda y la experiencia del usuario.</p>
-<p>
-7. < body>: La etiqueta < body> contiene todo el contenido visible de tu
-página web, como texto,
-imágenes, enlaces y más. Aquí es donde creas la estructura y el diseño de
-tu página.</p>
-<p>
-8. Otras etiquetas como < header>, < nav>, < section>, < footer>: Estas
-etiquetas se utilizan para
-estructurar el contenido de tu página en secciones lógicas. El uso de
-etiquetas semánticas como
+    <!-- CONTENIDO -->
+    <main>
 
-estas mejora la accesibilidad y el SEO de tu sitio web.</p>
-<p>
-9. < a>: La etiqueta < a> se usa para crear enlaces a otras páginas web o
-recursos. Puedes usarla
-para vincular a otras páginas dentro de tu sitio o a sitios externos.</p>
-<p>
-10. <p>, <h1>, < h2>, etc.: Estas etiquetas se utilizan para agregar texto y
-encabezados a tu página.
-Los encabezados se organizan en niveles, donde < h1> es el encabezado
-principal y < h2>, < h3>, etc.,
-son encabezados secundarios.
-</p>
-<p>
-11. Comentarios: Puedes agregar comentarios en tu código HTML
-utilizando < !-- ... -->. Los comentarios
-son útiles para documentar tu código y explicar su funcionalidad.</p>
-<p>
-La importancia de crear un archivo "index.html" correctamente
-estructurado y con etiquetas adecuadas
-radica en que facilita la comprensión del contenido por parte de los
-navegadores web y los motores
-de búsqueda, mejora la accesibilidad para personas con discapacidades y
-permite una mejor organización
-y mantenimiento de tu sitio web. Además, un buen uso de etiquetas
-semánticas y atributos meta puede
-mejorar la visibilidad de tu página en los resultados de búsqueda, lo que es
-crucial para la presencia
-en línea de tu sitio.</p>
+        <section class="contenido">
 
-</td></tr>
+            <h2>
+                <span style="
+                    background-color:#0b1f3a;
+                    color:white;
+                    padding:10px 20px;
+                    border-radius:10px;">
+                    Centro de Contacto
+                </span>
+            </h2>
 
-</section>
-</main>
+            <hr>
 
-<!--Pie de pagina-->
-<!--el atributo Class="footer" invoca a una funcion del archivo style.css para dar
-el formato del pie de pagina-->
-<div class="footer">Derechos reservados © 2024 Raquel Medrano</div>
+            <p>
+                Si tienes dudas relacionadas con el módulo de Diseño de Arquitectura
+                de Software, puedes comunicarte con nuestro equipo académico para
+                recibir orientación, soporte técnico y asistencia en los contenidos
+                del curso.
+            </p>
 
-<!--Invoca al archivo script.js que contiene la funcion que controla el
-comportamiento del menu-->
-<script src="script.js"></script>
+            <p>
+                Nuestro objetivo es ayudarte a comprender los fundamentos de la
+                arquitectura de software, patrones de diseño y buenas prácticas
+                utilizadas en el desarrollo de sistemas modernos.
+            </p>
+
+            <!-- INFORMACIÓN -->
+            <div style="
+                margin-top:40px;
+                background:#f4f8ff;
+                padding:30px;
+                border-radius:15px;
+                border-left:6px solid #0b1f3a;
+            ">
+
+                <h3 style="margin-bottom:20px; color:#0b1f3a;">
+                    Información de Contacto
+                </h3>
+
+                <p><strong>Teléfono:</strong> 78582246</p>
+
+                <p><strong>Correo Académico:</strong>
+                    soporte.arquitectura@gmail.com
+                </p>
+
+                <p><strong>Correo Institucional:</strong>
+                    infoclassinsibo@gmail.com
+                </p>
+
+                <p><strong>Facebook:</strong>
+                    Infoclass Arquitectura de Software
+                </p>
+
+                <p><strong>Horario de Atención:</strong>
+                    Lunes a Viernes — 08:00 AM a 06:00 PM
+                </p>
+
+            </div>
+
+            <!-- FORMULARIO -->
+            <div style="margin-top:50px;">
+
+                <h3 style="
+                    color:#0b1f3a;
+                    margin-bottom:25px;">
+                    Enviar Consulta
+                </h3>
+
+                <form>
+
+                    <input type="text"
+                        placeholder="Nombre completo"
+                        style="
+                        width:100%;
+                        padding:15px;
+                        margin-bottom:20px;
+                        border-radius:10px;
+                        border:1px solid #ccc;
+                        font-size:16px;
+                    ">
+
+                    <input type="email"
+                        placeholder="Correo electrónico"
+                        style="
+                        width:100%;
+                        padding:15px;
+                        margin-bottom:20px;
+                        border-radius:10px;
+                        border:1px solid #ccc;
+                        font-size:16px;
+                    ">
+
+                    <textarea
+                        placeholder="Escribe tu consulta..."
+                        rows="6"
+                        style="
+                        width:100%;
+                        padding:15px;
+                        border-radius:10px;
+                        border:1px solid #ccc;
+                        font-size:16px;
+                        resize:none;
+                    "></textarea>
+
+                    <button type="submit"
+                        style="
+                        margin-top:20px;
+                        background:#0b1f3a;
+                        color:white;
+                        border:none;
+                        padding:15px 30px;
+                        border-radius:10px;
+                        font-size:16px;
+                        cursor:pointer;
+                        transition:0.3s;
+                    ">
+
+                        Enviar Consulta
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+        Derechos reservados © 2024 Raquel Medrano
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
 </body>
-</html> 
+</html>
